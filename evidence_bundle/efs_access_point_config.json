@@ -1,0 +1,43 @@
+{
+    "AccessPoints": [
+        {
+            "ClientToken": "ee92e924-3819-41ee-ba78-8d087b51988e",
+            "Name": "lambda-efs-poc-lambda-access-point",
+            "Tags": [
+                {
+                    "Key": "Environment",
+                    "Value": "dev"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "lambda-efs-poc-lambda-access-point"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "lambda-efs-poc"
+                }
+            ],
+            "AccessPointId": "fsap-075043916cd5abc2c",
+            "AccessPointArn": "arn:aws:elasticfilesystem:us-west-1:552073033898:access-point/fsap-075043916cd5abc2c",
+            "FileSystemId": "fs-0bd58965b8f3ef5c4",
+            "PosixUser": {
+                "Uid": 1000,
+                "Gid": 1000
+            },
+            "RootDirectory": {
+                "Path": "/lambda",
+                "CreationInfo": {
+                    "OwnerUid": 1000,
+                    "OwnerGid": 1000,
+                    "Permissions": "755"
+                }
+            },
+            "OwnerId": "552073033898",
+            "LifeCycleState": "available"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+# Example Terraform Variables
+# Copy this file to terraform.tfvars and customize for your deployment
+
+region      = "us-east-1"
+prefix      = "lambda-efs-poc"
+environment = "dev"

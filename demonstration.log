@@ -1,0 +1,130 @@
+2025-11-03 21:52:15,225 - INFO - Loaded configuration from terraform/outputs.json
+2025-11-03 21:52:15,225 - INFO - Initialized with API URL: https://uckofd0vt8.execute-api.us-west-1.amazonaws.com/prod
+2025-11-03 21:52:15,225 - INFO - S3 Bucket: lambda-efs-poc-lambda-efs-poc-552073033898
+2025-11-03 21:52:15,225 - INFO - ================================================================================
+2025-11-03 21:52:15,225 - INFO - Starting Lambda + EFS POC Demonstration
+2025-11-03 21:52:15,225 - INFO - ================================================================================
+2025-11-03 21:52:15,225 - INFO - 
+[1/6] Running basic API tests...
+2025-11-03 21:52:15,225 - INFO - Testing Producer API (POST /ingest)...
+2025-11-03 21:52:20,096 - INFO - Producer API response: 502
+2025-11-03 21:52:20,096 - ERROR - ✗ Producer API test failed: 502
+2025-11-03 21:52:20,098 - ERROR - Skipping Consumer API test due to Producer failure
+2025-11-03 21:52:20,098 - INFO - 
+[2/6] Running cold vs warm timing test...
+2025-11-03 21:52:20,098 - INFO - Testing cold start vs warm invocation timing...
+2025-11-03 21:52:20,098 - INFO - Invoking Consumer Lambda (cold start)...
+2025-11-03 21:52:21,162 - INFO - Cold start duration: 1063ms (status: 502)
+2025-11-03 21:52:21,162 - INFO - Waiting 2 seconds before warm invocation...
+2025-11-03 21:52:23,163 - INFO - Invoking Consumer Lambda (warm)...
+2025-11-03 21:52:23,260 - INFO - Warm invocation duration: 95ms (status: 502)
+2025-11-03 21:52:23,260 - INFO - ✓ Cold vs warm test completed
+2025-11-03 21:52:23,260 - INFO -   Cold start: 1063ms
+2025-11-03 21:52:23,260 - INFO -   Warm invocation: 95ms
+2025-11-03 21:52:23,260 - INFO -   Improvement: 968ms (91.1%)
+2025-11-03 21:52:23,262 - INFO - 
+[3/6] Running concurrent access test...
+2025-11-03 21:52:23,263 - INFO - Testing concurrent access (10 parallel invocations)...
+2025-11-03 21:52:23,263 - INFO - Launching 10 concurrent invocations...
+2025-11-03 21:52:23,362 - INFO -   ✗ Invocation 6: 93ms
+2025-11-03 21:52:23,368 - INFO -   ✗ Invocation 5: 101ms
+2025-11-03 21:52:23,374 - INFO -   ✗ Invocation 1: 109ms
+2025-11-03 21:52:23,381 - INFO -   ✗ Invocation 4: 115ms
+2025-11-03 21:52:23,387 - INFO -   ✗ Invocation 0: 123ms
+2025-11-03 21:52:23,417 - INFO -   ✗ Invocation 2: 151ms
+2025-11-03 21:52:23,427 - INFO -   ✗ Invocation 9: 156ms
+2025-11-03 21:52:23,429 - INFO -   ✗ Invocation 7: 160ms
+2025-11-03 21:52:23,434 - INFO -   ✗ Invocation 3: 168ms
+2025-11-03 21:52:24,184 - INFO -   ✗ Invocation 8: 913ms
+2025-11-03 21:52:24,185 - WARNING - ⚠ Concurrent access test: 10 failures
+2025-11-03 21:52:24,185 - INFO -   Total time: 922ms
+2025-11-03 21:52:24,185 - INFO -   Average duration: 0ms
+2025-11-03 21:52:24,185 - INFO -   Min/Max: 0ms / 0ms
+2025-11-03 21:52:24,185 - INFO - 
+[4/6] Collecting evidence...
+2025-11-03 21:52:24,185 - INFO - Collecting evidence for paper...
+2025-11-03 21:52:24,185 - INFO - Querying CloudWatch Logs...
+2025-11-03 21:52:24,200 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-11-03 21:52:24,371 - INFO -   Found 0 recent Producer log streams
+2025-11-03 21:52:24,402 - INFO -   Found 0 recent Consumer log streams
+2025-11-03 21:52:24,403 - INFO - Documenting EFS Access Point configuration...
+2025-11-03 21:52:24,549 - INFO -   Retrieved Access Point configuration
+2025-11-03 21:52:24,646 - INFO -   Retrieved EFS file system configuration
+2025-11-03 21:52:24,647 - INFO - Listing S3 outputs/ prefix contents...
+2025-11-03 21:52:24,827 - INFO -   Found 1 files in outputs/ prefix
+2025-11-03 21:52:24,828 - INFO - ✓ Evidence collection completed
+2025-11-03 21:52:24,829 - INFO - 
+[5/6] Generating report...
+2025-11-03 21:52:24,829 - INFO - Generating comprehensive report...
+2025-11-03 21:52:24,829 - INFO - ✓ Report generated successfully
+2025-11-03 21:52:24,829 - INFO -   Summary saved to: demonstration_summary.txt
+2025-11-03 21:52:24,829 - INFO - 
+[6/6] All tests completed successfully!
+2025-11-03 21:52:24,830 - INFO - 
+Results saved to: demonstration_results.json
+2025-11-03 21:52:24,830 - INFO - Demonstration completed successfully!
+2025-11-03 21:53:52,801 - INFO - Loaded configuration from terraform/outputs.json
+2025-11-03 21:53:52,802 - INFO - Initialized with API URL: https://uckofd0vt8.execute-api.us-west-1.amazonaws.com/prod
+2025-11-03 21:53:52,802 - INFO - S3 Bucket: lambda-efs-poc-lambda-efs-poc-552073033898
+2025-11-03 21:53:52,802 - INFO - ================================================================================
+2025-11-03 21:53:52,802 - INFO - Starting Lambda + EFS POC Demonstration
+2025-11-03 21:53:52,802 - INFO - ================================================================================
+2025-11-03 21:53:52,802 - INFO - 
+[1/6] Running basic API tests...
+2025-11-03 21:53:52,802 - INFO - Testing Producer API (POST /ingest)...
+2025-11-03 21:53:53,882 - INFO - Producer API response: 404
+2025-11-03 21:53:53,882 - ERROR - ✗ Producer API test failed: 404
+2025-11-03 21:53:53,884 - ERROR - Skipping Consumer API test due to Producer failure
+2025-11-03 21:53:53,885 - INFO - 
+[2/6] Running cold vs warm timing test...
+2025-11-03 21:53:53,885 - INFO - Testing cold start vs warm invocation timing...
+2025-11-03 21:53:53,885 - INFO - Invoking Consumer Lambda (cold start)...
+2025-11-03 21:53:54,729 - INFO - Cold start duration: 844ms (status: 404)
+2025-11-03 21:53:54,730 - INFO - Waiting 2 seconds before warm invocation...
+2025-11-03 21:53:56,735 - INFO - Invoking Consumer Lambda (warm)...
+2025-11-03 21:53:56,858 - INFO - Warm invocation duration: 122ms (status: 404)
+2025-11-03 21:53:56,858 - INFO - ✓ Cold vs warm test completed
+2025-11-03 21:53:56,858 - INFO -   Cold start: 844ms
+2025-11-03 21:53:56,858 - INFO -   Warm invocation: 122ms
+2025-11-03 21:53:56,858 - INFO -   Improvement: 722ms (85.5%)
+2025-11-03 21:53:56,862 - INFO - 
+[3/6] Running concurrent access test...
+2025-11-03 21:53:56,862 - INFO - Testing concurrent access (10 parallel invocations)...
+2025-11-03 21:53:56,862 - INFO - Launching 10 concurrent invocations...
+2025-11-03 21:53:56,972 - INFO -   ✓ Invocation 6: 104ms
+2025-11-03 21:53:56,977 - INFO -   ✓ Invocation 0: 113ms
+2025-11-03 21:53:56,985 - INFO -   ✓ Invocation 2: 120ms
+2025-11-03 21:53:56,999 - INFO -   ✓ Invocation 7: 129ms
+2025-11-03 21:53:57,009 - INFO -   ✓ Invocation 3: 143ms
+2025-11-03 21:53:57,022 - INFO -   ✓ Invocation 4: 155ms
+2025-11-03 21:53:57,036 - INFO -   ✓ Invocation 5: 168ms
+2025-11-03 21:53:57,046 - INFO -   ✓ Invocation 1: 181ms
+2025-11-03 21:53:57,055 - INFO -   ✓ Invocation 9: 184ms
+2025-11-03 21:53:57,628 - INFO -   ✓ Invocation 8: 756ms
+2025-11-03 21:53:57,629 - INFO - ✓ Concurrent access test passed
+2025-11-03 21:53:57,629 - INFO -   Total time: 766ms
+2025-11-03 21:53:57,629 - INFO -   Average duration: 205ms
+2025-11-03 21:53:57,629 - INFO -   Min/Max: 104ms / 756ms
+2025-11-03 21:53:57,629 - INFO - 
+[4/6] Collecting evidence...
+2025-11-03 21:53:57,629 - INFO - Collecting evidence for paper...
+2025-11-03 21:53:57,629 - INFO - Querying CloudWatch Logs...
+2025-11-03 21:53:57,640 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2025-11-03 21:53:57,823 - INFO -   Found 1 recent Producer log streams
+2025-11-03 21:53:57,862 - INFO -   Found 5 recent Consumer log streams
+2025-11-03 21:53:57,863 - INFO - Documenting EFS Access Point configuration...
+2025-11-03 21:53:58,066 - INFO -   Retrieved Access Point configuration
+2025-11-03 21:53:58,132 - INFO -   Retrieved EFS file system configuration
+2025-11-03 21:53:58,134 - INFO - Listing S3 outputs/ prefix contents...
+2025-11-03 21:53:58,313 - INFO -   Found 1 files in outputs/ prefix
+2025-11-03 21:53:58,315 - INFO - ✓ Evidence collection completed
+2025-11-03 21:53:58,315 - INFO - 
+[5/6] Generating report...
+2025-11-03 21:53:58,315 - INFO - Generating comprehensive report...
+2025-11-03 21:53:58,315 - INFO - ✓ Report generated successfully
+2025-11-03 21:53:58,315 - INFO -   Summary saved to: demonstration_summary.txt
+2025-11-03 21:53:58,316 - INFO - 
+[6/6] All tests completed successfully!
+2025-11-03 21:53:58,316 - INFO - 
+Results saved to: demonstration_results.json
+2025-11-03 21:53:58,316 - INFO - Demonstration completed successfully!

@@ -1,0 +1,5 @@
+# Producer Lambda dependencies
+# Note: boto3 is included in the AWS Lambda Python runtime
+# This file is provided for local testing purposes
+
+boto3>=1.26.0

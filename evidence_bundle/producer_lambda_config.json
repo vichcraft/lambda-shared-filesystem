@@ -1,0 +1,76 @@
+{
+    "Configuration": {
+        "FunctionName": "lambda-efs-poc-producer-lambda",
+        "FunctionArn": "arn:aws:lambda:us-west-1:552073033898:function:lambda-efs-poc-producer-lambda",
+        "Runtime": "python3.11",
+        "Role": "arn:aws:iam::552073033898:role/lambda-efs-poc-producer-lambda-role",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 4201,
+        "Description": "",
+        "Timeout": 300,
+        "MemorySize": 1024,
+        "LastModified": "2025-11-04T05:53:33.000+0000",
+        "CodeSha256": "w259f01/skJim7IlgU3OWLvTyou8aCJTanCwzXp+wkA=",
+        "Version": "$LATEST",
+        "VpcConfig": {
+            "SubnetIds": [
+                "subnet-01e095baa130d8e9e",
+                "subnet-0eef93261721eb0e9"
+            ],
+            "SecurityGroupIds": [
+                "sg-015dceb94bf210560"
+            ],
+            "VpcId": "vpc-0516394c3e91f4729",
+            "Ipv6AllowedForDualStack": false
+        },
+        "Environment": {
+            "Variables": {
+                "EFS_MOUNT_PATH": "/mnt/efs",
+                "INPUTS_DIR": "inputs",
+                "MODELS_DIR": "models",
+                "S3_BUCKET_NAME": "lambda-efs-poc-lambda-efs-poc-552073033898",
+                "OUTPUTS_DIR": "outputs"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "f088bd37-82d5-4ded-9574-135da50310fe",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "FileSystemConfigs": [
+            {
+                "Arn": "arn:aws:elasticfilesystem:us-west-1:552073033898:access-point/fsap-075043916cd5abc2c",
+                "LocalMountPath": "/mnt/efs"
+            }
+        ],
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:us-west-1::runtime:6c687d1ae05d783a82cd99c5896c1baddfe1daf7ac4068082fb989401de8b287"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/lambda-efs-poc-producer-lambda"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-us-west-1-tasks.s3.us-west-1.amazonaws.com/snapshots/552073033898/lambda-efs-poc-producer-lambda-f584161c-cc4e-4fab-9767-e3f6a536247c?versionId=n3pTrCCMPZKVaI0EnyIIbG5iJXJp32zp&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMSJHMEUCIDpmvNeDunYxhq7RYlnaf%2FLOpA9myyHCt6FQrr1xEMWGAiEAvk1IHtY61XFiTNRJRziPmURGjJu86SR4WhU4tmcKs%2BkqiQIIaxAFGgw0NjA5MzI4NTYyMjYiDJTh2iEr1f6jmk%2FCUirmAbk6Mw4GHeB3n1lBgGIMAtAkx46%2FlKMt%2FudgYNlePYNQ6eOpvtyeubtQ4%2BsYAAlmA4DltPeFu4aK36H2%2FTgWs%2B7H8iNoHYtBhHmLEOM5png%2F0qmq3CHBpS0UG4nO6J22tEEV3VJDSlmbPDU91wQDOg62jLAASV3XBJmpzgF4YXLi3kliHG4%2FV5CjNNhQTy%2FiU7xmnClVWR3eNOVFyY7wQybSZAhIlJjtikWqMzskygmPsTl2rBPzdGeMZNvBlzTpzYvCGApIECNL0xqjbVsQWFRsbJqEaFk3rwDL92erfO8C2aTrAG3GMJewpcgGOo8BTfLI6iyLcR86I6iTWmuPkvVuG73HHhPWT%2FEIxxiFtajgqs5A0Qth06dVIQGQOViL%2BsMWjT%2FT6nTJViRmfWyXuK0bPTUllv%2FaGi9kNDkbF2LiiQySWJv5M%2FalWYZ5stkkYui7wvdo7J4jBRb3%2BxswQ0VIKvq2bjmd24tKFL902hIY8rjPjRgHZvVYy7a%2BOFE%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20251104T055654Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAWWUN5HGRHR4IAP2N%2F20251104%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Signature=42c9b36e7223207ce69708d3c8653041a3114c8884cee091908140cb1400a7b7"
+    },
+    "Tags": {
+        "Project": "lambda-efs-poc",
+        "ManagedBy": "terraform",
+        "Environment": "dev",
+        "Name": "lambda-efs-poc-producer-lambda"
+    }
+}

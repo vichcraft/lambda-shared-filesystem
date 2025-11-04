@@ -1,0 +1,20 @@
+{
+  "api_gateway_url": {
+    "value": "https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/prod"
+  },
+  "s3_bucket_name": {
+    "value": "your-prefix-lambda-efs-poc-123456789012"
+  },
+  "producer_lambda_arn": {
+    "value": "arn:aws:lambda:us-east-1:123456789012:function:producer-lambda"
+  },
+  "consumer_lambda_arn": {
+    "value": "arn:aws:lambda:us-east-1:123456789012:function:consumer-lambda"
+  },
+  "efs_file_system_id": {
+    "value": "fs-0123456789abcdef0"
+  },
+  "efs_access_point_arn": {
+    "value": "arn:aws:elasticfilesystem:us-east-1:123456789012:access-point/fsap-0123456789abcdef0"
+  }
+}

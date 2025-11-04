@@ -1,0 +1,112 @@
+{
+  "api_gateway_stage": {
+    "sensitive": false,
+    "type": "string",
+    "value": "prod"
+  },
+  "api_gateway_url": {
+    "sensitive": false,
+    "type": "string",
+    "value": "https://uckofd0vt8.execute-api.us-west-1.amazonaws.com/prod"
+  },
+  "consumer_lambda_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:lambda:us-west-1:552073033898:function:lambda-efs-poc-consumer-lambda"
+  },
+  "deployment_summary": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "api_gateway_url": "string",
+        "efs_file_system_id": "string",
+        "environment": "string",
+        "ingest_endpoint": "string",
+        "predict_endpoint": "string",
+        "region": "string",
+        "s3_bucket_name": "string",
+        "vpc_id": "string"
+      }
+    ],
+    "value": {
+      "api_gateway_url": "https://uckofd0vt8.execute-api.us-west-1.amazonaws.com/prod",
+      "efs_file_system_id": "fs-0bd58965b8f3ef5c4",
+      "environment": "dev",
+      "ingest_endpoint": "https://uckofd0vt8.execute-api.us-west-1.amazonaws.com/prod/ingest",
+      "predict_endpoint": "https://uckofd0vt8.execute-api.us-west-1.amazonaws.com/prod/predict",
+      "region": "us-west-1",
+      "s3_bucket_name": "lambda-efs-poc-lambda-efs-poc-552073033898",
+      "vpc_id": "vpc-0516394c3e91f4729"
+    }
+  },
+  "efs_access_point_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:elasticfilesystem:us-west-1:552073033898:access-point/fsap-075043916cd5abc2c"
+  },
+  "efs_access_point_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "fsap-075043916cd5abc2c"
+  },
+  "efs_file_system_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "fs-0bd58965b8f3ef5c4"
+  },
+  "efs_security_group_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-0cfddad79fc48eae5"
+  },
+  "ingest_endpoint": {
+    "sensitive": false,
+    "type": "string",
+    "value": "https://uckofd0vt8.execute-api.us-west-1.amazonaws.com/prod/ingest"
+  },
+  "lambda_security_group_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-015dceb94bf210560"
+  },
+  "predict_endpoint": {
+    "sensitive": false,
+    "type": "string",
+    "value": "https://uckofd0vt8.execute-api.us-west-1.amazonaws.com/prod/predict"
+  },
+  "private_subnet_ids": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "subnet-01e095baa130d8e9e",
+      "subnet-0eef93261721eb0e9"
+    ]
+  },
+  "producer_lambda_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:lambda:us-west-1:552073033898:function:lambda-efs-poc-producer-lambda"
+  },
+  "s3_bucket_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:s3:::lambda-efs-poc-lambda-efs-poc-552073033898"
+  },
+  "s3_bucket_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "lambda-efs-poc-lambda-efs-poc-552073033898"
+  },
+  "vpc_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "vpc-0516394c3e91f4729"
+  }
+}

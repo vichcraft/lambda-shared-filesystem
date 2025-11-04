@@ -1,0 +1,3 @@
+# Consumer Lambda dependencies
+# Using only Python standard library and boto3 (included in Lambda runtime)
+# No external dependencies required for POC

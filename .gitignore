@@ -26,6 +26,9 @@ terraform/outputs.json
 *.swo
 *~
 
+# Kiro specs
+.kiro/
+
 # OS
 .DS_Store
 Thumbs.db
